@@ -1,0 +1,16 @@
+{
+    "namespace": "ddstatsprocessor.alerts",
+	"type": "record",
+	"name": "AlertRule",
+	"fields": [
+        {"name": "DomainID", "type": "string"},
+        {"name": "Service", "type": "string"},
+        {"name": "Operation", "type": "string"},
+        {"name": "Env", "type": "string", "default": "none"},
+        {"name": "Duration", "type": "long"},
+        {"name": "Measure", "type": "string"},
+        {"name": "Submeasure", "type": "string"},
+        {"name": "Upperlimit", "type": "double"},
+        {"name": "CreationTime", "type": "long"}
+	]
+}
